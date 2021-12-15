@@ -41,8 +41,6 @@ const App = () => {
 		inputClean = inputClean.replace(/  +/g, ' ');
 		const isEmpty = inputClean.length === 0;
 
-		console.log('lizo', posts.length);
-
 		if (!isEmpty) {
 			setPosts([
 				{ id: posts.length + 1, title: form.title, category: form.category, likes: 0 },
