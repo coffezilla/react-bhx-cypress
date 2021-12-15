@@ -10,7 +10,7 @@ const Post = ({ id, title, category, likes, handleLike }: IProps) => {
 	const categories = ['Sem categoria', 'Lazer', 'Trabalho'];
 
 	return (
-		<div className="bg-white shadow-md mx-auto rounded-sm max-w-lg mb-2">
+		<div className="post-content bg-white shadow-md mx-auto rounded-sm max-w-lg mb-2">
 			<div className="overflow-hidden">
 				<img
 					className="object-cover"
@@ -18,7 +18,7 @@ const Post = ({ id, title, category, likes, handleLike }: IProps) => {
 					alt="My Category"
 				/>
 			</div>
-			<div className="flex justify-between p-3 items-center">
+			<div className="post-content__description flex justify-between p-3 items-center">
 				<div className="truncate">
 					<h2 className="font-bold text-sm md:text-lg truncate">{title.length > 0 && title}</h2>
 					<p className="text-xs">

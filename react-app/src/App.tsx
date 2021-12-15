@@ -9,7 +9,7 @@ const App = () => {
 	>([]);
 	const [form, setForm] = useState({
 		title: '',
-		category: 1,
+		category: 0,
 	});
 
 	// input
@@ -47,6 +47,9 @@ const App = () => {
 				...posts,
 			]);
 			setForm({ ...form, title: '' });
+		} else {
+			alert('Campo vazio alert');
+			console.log('Campo vazio log');
 		}
 	};
 

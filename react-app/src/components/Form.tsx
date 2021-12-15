@@ -34,7 +34,9 @@ const Form = ({ formState, handleForm, submitForm }: IProps) => {
 					value={formState.category}
 					onChange={(e) => handleForm(e)}
 				>
-					<option value="0">Sem Categoria</option>
+					<option value="0" selected>
+						Sem Categoria
+					</option>
 					<option value="1">Lazer</option>
 					<option value="2">Trabalho</option>
 				</select>
